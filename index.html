@@ -2,17 +2,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-  	<link rel="stylesheet" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:700' rel='stylesheet' type='text/css'>
-    <script src = "node_modules/zepto/zepto.min.js"></script>
-    <script type='text/javascript' src="js/app.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
+	<script src="mustache.js"></script>
+	<script type='text/javascript' src = "node_modules/zepto/zepto.min.js"></script>
+	<script type='text/javascript' src="js/app.js"></script>
 
-
-	<title></title>
+	<title>ProfilePageHayate</title>
 </head>
+
 <body>
+	<script id="tpl" type"x-tmpl-mustache">
+	<div class="part1">
+		<img class='photo' alt="la photo de Hayate du profil" src="images/hayatenb.jpg"/>
 
-</body>
+		<h1 class="me"><span elt="first_name"></span><br><span elt="last_name"></span></h1></bar>
+		<h2>Chef de projet - Web Développeur</h2>
+		</div>
+	<section id="fond2" class="part2">
+		<ul>
+			<br><li><a class="menu" alt="lien vers les projet de Hayate "href="#projet">Projets</a></li></br>
+			<br><li><a class="menu" nalt="lien vers les badges obtenus" href="#badge">Badges</a></li></br>
+			<br><li><a class="menu" id="mybutton" alt="lien vers contact" href="#contact">Contact</a></li></br>
+		</ul>
 
-</html>
+
+		<div class='text' id='projet'>
+
+			<p>Contrairement
+			</p></div>
+			<div class='text' id='badge'>
+				<p>
+					<br>Badges obtenus sur Codecademy.com: 32.</br>
+					<br>Openclassroom : </br>
+					<br>app.pluralsight.com : </br></p>
+				</div>
+				<div class='text' id='contact'>
+					<p id="contactjson"><br>M@il: sehli.hayate@live.fr</br>
+						<br>Mobile : 0650928008</br>
+						<br>Localisation : Toulouse, Paris, Bruxelle, Madrid.</br></p>
+					</div>
+
+					<div id="element_to_pop_up">
+						<a class="b-close">x<a/>
+						<p>Id: {{id}}</p>
+						<p>Nom: {{first_name}}</p>
+						<p>Prénom: {{last_name}}</p>
+						<p>Métier: {{occupation}}</p>
+						<p>Mail: <a href="mailto: sehli.hayate@live.fr">{{contact.email}}</a></p>
+
+						</div>
+
+					</section>
+
+	</script>
+				</body>
+
+				</html>

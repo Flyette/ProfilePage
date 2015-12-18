@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Flyette/ProfilePage/issues"
   },
-  "homepage": "https://github.com/Flyette/ProfilePage#readme"
+  "homepage": "https://github.com/Flyette/ProfilePage#readme",
+  "dependencies": {
+    "zepto": "0.0.4"
+  }
 }
