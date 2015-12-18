@@ -74,17 +74,23 @@ img.photo {
      width: 940px;}
 
      #element_to_pop_up { 
-      background-color: #ad078c;
+      background-color: #FFF;
       border-radius:15px;
       margin-bottom: 200px;
-      color:#000;
       display:none; 
       min-width:400px;
       min-height: 180px;
     }
     .b-close{
       cursor:pointer;
-      position:absolute;
+      position:relative;
       right:10px;
       top:5px;
+      width: 10px;
+      height: 10px;
     }
+    .grey {
+      padding-left: 40px;
+      color: #4E5152;
+    }
+

@@ -6,24 +6,15 @@ $(document).ready(function(){
 		var id = $(this).attr('href');
 		$(id).show();
 		if (id == "#contact"){
-			$('#element_to_pop_up').show();
+			$('#element_to_pop_up').toggle();
+			$('.b-close').on('click', function(){
+				$('#element_to_pop_up').hide();
+			});
 		}
 	});
 	
 
-	/*$.getJSON('http://vps227573.ovh.net/u-16.json', function(data) {
-		var val = $('[elt]');
-		for(var n =0; n < val.length; n ++){
-			var attribut = $(val[n]).attr('elt');
-			var result = data[attribut];
-			$(val[n]).html(result);}
-		});
-	*/
-	// $.getJSON('http://vps227573.ovh.net/u-16.json', function(data) {
-	// 	    var fullName = "{{first_name}} {{last_name}}";
-	// 	    var infoFullName = Mustache.to_html(fullName, data);
-	// 	    $('.me').html(infoFullName);
-	// 	});
+
 	var maketemplate = function (mymustache, cible, json){
 		var info = Mustache.to_html(mymustache, json);
 		cible.html(info);
@@ -36,14 +27,6 @@ $(document).ready(function(){
 	});
 
 
-            //$('#my-button').on('click', function() {
-            	console.log('pop');
-                // Prevents the default action to be triggered. 
-                // e.preventDefault();
 
-           
-                //$('#element_to_pop_up').show();
-
-           // });
 	
-	});
+});
